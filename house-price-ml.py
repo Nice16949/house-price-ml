@@ -34,6 +34,7 @@ print(f"特征系数：{model.coef_}")
 print(f"截距：{model.intercept_:.2f}")
 print(f"均方误差MSE：{mse:.2f}")
 print(f"拟合优度 R²：{r2:.4f}")
+
 house_feature = np.array([[110, 3, 12]])
 predict_result = model.predict(house_feature)
 print(f"\n【预测示例】面积110㎡，3室，房龄12年，预估房价：{predict_result[0]:.2f} 元")
